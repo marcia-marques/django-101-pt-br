@@ -1,41 +1,51 @@
-## Welcome to GitHub Pages
+# Índice
 
-- This links to [a different section on the same page, using a "#" and the header ID](#header-ids-and-links)
+[Pyhon](#python)
 
-You can use the [editor on GitHub](https://github.com/marcia-marques/django-101-pt-br/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+[Ambiente virtual](#amiente-virtual)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Django](#django)
 
-### Markdown
+Esse tutorial foi criado no sistema operacional Linux. Alguns comando podem ser diferentes se você estivr utilizando Windows ou Mac.
 
-# Header ids and links
+# Python
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Se você ainda não tem o Python instalado no seu computador, você pode fazer o download [aqui](https://www.python.org/downloads/).
 
-```markdown
-Syntax highlighted code block
+# Ambiente virtual
 
-# Header 1
-## Header 2
-### Header 3
+Vamos criar a pasta do nosso projeto e criar um ambiente virtual. Em primeiro lugar, no seu terminal instale o _virtualenv_:
 
-- Bulleted
-- List
+`pip install virtualenv`
 
-1. Numbered
-2. List
+Crie e acesse a pasta do projeto. Escolha o nome que preferir, para esse tutorial escolhemos o nome ´djangotutorial´:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+mkdir djangotutorial
+cd djangotutorial
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Em seguida crie o ambiente virtual (dentro da pasta do projeto). Novamente escolha o nome que preferir, aqui vamos usar _venv_:
 
-### Jekyll Themes
+`python -m venv venv`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marcia-marques/django-101-pt-br/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Teremos a seguinte estrutura:
 
-### Support or Contact
+```
+djangotutorial/
+└── venv
+    ├── bin
+    ├── include
+    ├── lib
+    └── lib64 -> lib
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Para ativar o ambiente virtual basta usar o comando:
+
+`source venv/bin/activate`
+
+E para desativar:
+
+`deactivate`
+
+# Django
