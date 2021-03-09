@@ -1,10 +1,14 @@
 ## Welcome to GitHub Pages
 
+- This links to [a different section on the same page, using a "#" and the header ID](#header-ids-and-links)
+
 You can use the [editor on GitHub](https://github.com/marcia-marques/django-101-pt-br/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
+
+# Header ids and links
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
