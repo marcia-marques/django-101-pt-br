@@ -3,6 +3,8 @@
 [Pyhon](#python) <br>
 [Ambiente virtual](#ambiente-virtual) <br>
 [Django](#django) <br>
+[Django admin](#django-admin) <br>
+[App](#app) <br>
 
 Esse tutorial foi criado no sistema operacional **_Linux_**. Alguns comandos podem ser diferentes se você estiver utilizando _Windows_ ou _Mac_.
 
@@ -118,5 +120,74 @@ python manage.py runserver
 _Voilà!_ Temos nosso primeiro projeto no ar [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/75334161/110520756-aa6ff300-80ed-11eb-9e5b-ed0d93551b7d.png" width="350">
+    <img src="https://user-images.githubusercontent.com/75334161/110520756-aa6ff300-80ed-11eb-9e5b-ed0d93551b7d.png" width="700">
 </p>
+
+Ao usar o comando `runserver` pela primeira vez você verá uma mensagem similar a essa:
+
+```
+You have 18 unapplied migration(s). Your project may not work properly until you
+apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+```
+
+Precisamos executar o comando `migrate` que fará alterações no banco de dados. Toda vez que criarmos novos tabelas no banco de dados precisamos executar o comando `makemigrations` e `migrate`. Mas por enquanto iremos apenas executar as alterações iniciais da configuração do Django.
+
+```
+python manage.py migrate
+```
+
+O resultado será algo assim:
+
+```
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+```
+
+> **Dica**: Você pode abrir uma nova aba ou uma nava janela do terminal para continuar usando os comandos do _Django_ sem ter que interromper o servidor.
+> 
+
+# Django admin [&uarr;](#índice)
+
+Para acessar o [`Django-admin`](http://127.0.0.1:8000/admin/) precisamos criar um `superuser`:
+
+```
+python manage.py createsuperuser
+```
+
+> **Atenção**: Só é possível criar o `superuser` após a execução do comando `migrate`
+> 
+
+Você deverá preencher _username_, _e-mail_ e _password_
+
+Pronto. Agora você pode acessar o [`Django-admin`](http://127.0.0.1:8000/admin/). Você verá essa tela:
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/75334161/110528210-a72d3500-80f6-11eb-8cca-fdf933dbae5b.png" width="700">
+</p>
+
+# App [&uarr;](#índice)
+
+```
+python manage.py startapp myapp
+```
+
