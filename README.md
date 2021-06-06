@@ -8,11 +8,13 @@
 
 Esse tutorial foi criado no sistema operacional **_Linux_**. Alguns comandos podem ser diferentes se você estiver utilizando _Windows_ ou _Mac_.
 
-# Python [&uarr;](#índice)
+# Python
+[&uarr;](#índice)
 
 Se você ainda não tem o Python instalado no seu computador pode fazer o download [aqui](https://www.python.org/downloads/), ou se preferir pode usar a distribuição [Anaconda](https://www.anaconda.com/products/individual).
 
-# Ambiente virtual [&uarr;](#índice)
+# Ambiente virtual
+[&uarr;](#índice)
 
 Vamos criar a pasta do nosso projeto e criar um ambiente virtual. Em primeiro lugar, no seu terminal, instale o _virtualenv_:
 
@@ -74,7 +76,8 @@ Ao ativar o ambiente virtual você verá o nome que escolheu entre parênteses n
 (venv) marcia@nt-marcia:~/djangotutorial$
 ```
 
-# Django [&uarr;](#índice)
+# Django
+[&uarr;](#índice)
 
 Agora vamos instalar o _Django_ no nosso ambiente virtual, certifique-se de que ele está ativado.
 
@@ -166,7 +169,8 @@ Running migrations:
 > **Dica**: Você pode abrir uma nova aba ou uma nava janela do terminal para continuar usando os comandos do _Django_ sem ter que interromper o servidor.
 > 
 
-# Django admin [&uarr;](#índice)
+# Django admin
+[&uarr;](#índice)
 
 Para acessar o [`Django-admin`](http://127.0.0.1:8000/admin/) precisamos criar um `superuser`:
 
