@@ -185,7 +185,8 @@ Pronto. Agora você pode acessar o [`Django-admin`](http://127.0.0.1:8000/admin/
     <img src="https://user-images.githubusercontent.com/75334161/110528210-a72d3500-80f6-11eb-8cca-fdf933dbae5b.png" width="700">
 </p>
 
-# App [&uarr;](#índice)
+# App
+[&uarr;](#índice)
 
 ```
 python manage.py startapp myapp
