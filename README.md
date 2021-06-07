@@ -22,7 +22,7 @@ Vamos criar a pasta do nosso projeto e criar um ambiente virtual. Em primeiro lu
 pip install virtualenv
 ```
 
-Crie e acesse a pasta do projeto. Escolha o nome que preferir, para esse tutorial escolhemos o nome ´djangotutorial´:
+Crie e acesse a pasta do projeto. Escolha o nome que preferir, para esse tutorial escolhemos o nome `djangotutorial`:
 
 ```
 mkdir djangotutorial
