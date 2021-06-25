@@ -35,6 +35,8 @@ Em seguida crie o ambiente virtual (dentro da pasta do projeto). Novamente escol
 python -m venv venv
 ```
 
+Se optar por criar uma pasta oculta basta adicionar _._ antes do nome da pasta, por exemplo _.venv_.
+
 Teremos a seguinte estrutura (no _Windows_ e _Mac_ essa estrutura pode ser um pouco diferente):
 
 ```
@@ -78,6 +80,12 @@ Ao ativar o ambiente virtual você verá o nome que escolheu entre parênteses n
 
 # Django
 [&uarr;](#índice)
+
+Antes de iniciar as intalações do nosso ambiente virtual vamos atualizar o `pip`:
+
+```
+python -m pip install --upgrade pip
+```
 
 Agora vamos instalar o _Django_ no nosso ambiente virtual, certifique-se de que ele está ativado.
 
